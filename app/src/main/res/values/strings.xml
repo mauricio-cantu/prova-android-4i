@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Prova 4I</string>
+    <string-array name="marcas">
+        <item>LG</item>
+        <item>Sony</item>
+        <item>Samsung</item>
+        <item>Philips</item>
+    </string-array>
+</resources>

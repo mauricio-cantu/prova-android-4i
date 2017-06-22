@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/acao_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginTop="76dp"
+        android:text="Marca"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/ac_marca"
+        android:layout_height="40dp"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="19dp"
+        android:layout_width="213dp"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignEnd="@+id/et_modelo" />
+
+    <EditText
+        android:id="@+id/et_modelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="92dp"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/ac_marca"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginStart="21dp" />
+
+    <EditText
+        android:id="@+id/et_peso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="188dp"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/et_modelo"
+        android:layout_alignStart="@+id/et_modelo" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_modelo"
+        android:layout_alignBottom="@+id/et_modelo"
+        android:layout_alignEnd="@+id/cb_cd"
+        android:text="Modelo"
+        android:textSize="18dp"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="212dp" />
+
+    <CheckBox
+        android:id="@+id/cb_cc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Closed Cap."
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="293dp"
+        android:layout_alignBaseline="@+id/cb_sap"
+        android:layout_alignBottom="@+id/cb_sap"
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:id="@+id/cb_cd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C. Digital"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="293dp"
+        android:layout_alignBaseline="@+id/cb_sap"
+        android:layout_alignBottom="@+id/cb_sap"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:id="@+id/cb_sap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Func. SAP"
+        tools:layout_editor_absoluteX="272dp"
+        tools:layout_editor_absoluteY="293dp"
+        android:layout_marginBottom="42dp"
+        android:layout_above="@+id/rg_res"
+        android:layout_centerHorizontal="true" />
+
+    <RadioGroup
+        android:id="@+id/rg_res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="355dp"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/cb_cd">
+
+        <RadioButton
+            android:id="@+id/rb_hd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="HD"
+            tools:layout_editor_absoluteX="-50dp"
+            tools:layout_editor_absoluteY="-61dp" />
+
+        <RadioButton
+            android:id="@+id/rb_full_hd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Full HD"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="357dp" />
+
+        <RadioButton
+            android:id="@+id/rb_4k"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="4K" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/bt_acao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="272dp"
+        tools:layout_editor_absoluteY="445dp"
+        android:layout_alignBaseline="@+id/bt_deletar"
+        android:layout_alignBottom="@+id/bt_deletar"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peso"
+        android:textSize="18dp"
+        android:layout_alignBaseline="@+id/et_peso"
+        android:layout_alignBottom="@+id/et_peso"
+        android:layout_alignEnd="@+id/textView" />
+
+    <Button
+        android:id="@+id/bt_deletar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light"
+        android:text="deletar"
+        android:visibility="invisible"
+        android:layout_alignBottom="@+id/rg_res"
+        android:layout_alignStart="@+id/cb_cc" />
+
+</RelativeLayout>
